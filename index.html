@@ -25,29 +25,31 @@
 <body class="bg-white text-black">
 
 <header class="shadow-md 0 top-0 z-20 relative">
-    <div class="max-w-7xl mx-auto flex justify-between items-end-safe sm:items-center-safe p-8 sm:p-10 flex-col sm:flex-row">
+    <div class="max-w-7xl mx-auto flex justify-between lg:items-center-safe p-8 sm:p-10 sm:pr-10 flex-row">
         <div>
             <h1 class="text-4xl font-medium tracking-tight">
                 Commercial Door Installer
             </h1>
-            <p class="sm:text-base text-gray-600 mt-4 sm:mt-2">📍 Jacksonville, FL &nbsp|&nbsp 📞 +1(904)-645-9716 &nbsp|&nbsp 📧 cdidoorinstaller@gmail.com</p> <!-- Location info -->
+            <div class="flex flex-col md:flex-row divide-gray-500 md:divide-x mt-4 lg:mt-2">
+                <p class="text-gray-600 md:pr-2">📍 Jacksonville, FL</p>
+                <p class="text-gray-600 md:px-2">📞 +1(904)-649-4967</p>
+                <p class="text-gray-600 md:pl-2">📧 cdidoorinstaller@gmail.com</p>
+            </div>
         </div>
 
         <!-- Hamburger toggle (mobile only) -->
-        <button id="menu-toggle" class="sm:hidden text-gray-800 mt-2 z-35">
-            Menu
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline ml-1 align-top" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        <button id="menu-toggle" class="lg:hidden text-lg h-fit align-bottom text-gray-800 mt-auto z-35">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 inline align-top" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" stroke="black"
                       d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
 
         <!-- Nav links (hidden on mobile until toggled) -->
-        <nav id="nav-menu" class="absolute top-full left-0 w-full opacity-0 sm:opacity-100 sm:visible sm:pointer-events-auto invisible pointer-events-none sm:transition-none transition-opacity duration-500 ease-in-out justify-center flex-col bg-white sm:static flex items-center sm:flex-row gap-6 text-lg font-medium sm:w-auto p-6 sm:p-0 sm:shadow-none z-30">
-            <a href="#about" class="sm:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">About</a>
-            <a href="#projects" class="sm:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">Projects</a>
-            <a href="#services" class="sm:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">Services</a>
-            <a href="#contact" class="sm:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">Contact Us</a>
+        <nav id="nav-menu" class="absolute top-full left-0 w-full opacity-0 lg:opacity-100 lg:visible lg:pointer-events-auto invisible pointer-events-none lg:transition-none transition-opacity duration-500 ease-in-out justify-center flex-col bg-white lg:static flex items-center lg:flex-row gap-6 text-lg font-medium lg:w-auto p-6 lg:p-0 lg:shadow-none z-30">
+            <a href="#about" class="lg:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">About</a>
+<!--            <a href="#projects" class="lg:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">Projects</a>-->
+            <a href="#contact" class="lg:no-underline underline underline-offset-6 decoration-gray-400 hover:text-blue-500  transition-colors">Contact Us</a>
         </nav>
     </div>
 </header>
@@ -66,35 +68,46 @@
 
 <main class="max-w-7xl mx-auto py-12 px-4">
     <section id="about" class="mb-10 scroll-mt-[20vh]">
-        <h2 class="text-3xl font-semibold mb-4 ">About</h2>
+        <h2 class="text-3xl font-semibold">About</h2>
+        <hr class="my-4 border-t border-gray-300">
         <p class="text-lg leading-relaxed text-gray-700 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui sit amet purus accumsan vehicula.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui sit amet purus accumsan vehicula.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui sit amet purus accumsan vehicula.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui sit amet purus accumsan vehicula.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in dui sit amet purus accumsan vehicula.
+            Commercial Door Installers, LLC has over 35 years of experience in commercial door and architectural hardware installation.
+        </p>
     </section>
 
-    <hr class="my-10 border-t border-gray-300 ">
-
-    <section id="projects" class="scroll-mt-[20vh]">
-        <h2 class="text-3xl font-semibold mb-6 ">Projects</h2>
+    <section id="projects" class="scroll-mt-[20vh] mb-10">
+        <h2 class="text-3xl font-semibold mb-6 "></h2>
         <!-- Gallery Section -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 justify-items-center-safe">
             <!-- Carousel/Preview Images -->
-            <img src="./media/placeholder.jpg" alt="Steel door install" class="rounded shadow-md">
-            <img src="./media/placeholder.jpg" alt="Glass commercial door" class="rounded shadow-md">
-            <img src="./media/placeholder.jpg" alt="Loading dock doors" class="rounded shadow-md">
+            <div class="aspect-square max-w-md w-full">
+                <img src="./media/example_door1.png" alt="Steel door install" class="rounded shadow-md w-full h-full">
+            </div>
+            <div class="aspect-square max-w-md w-full">
+                <img src="./media/example_door2.JPG" alt="Steel door frames" class="rounded shadow-md w-full h-full">
+            </div>
+            <div class="aspect-square max-w-md w-full">
+                <img src="./media/example_door3.JPG" alt="Stored industrial doorways" class="rounded shadow-md w-full h-full">
+            </div>
         </div>
     </section>
 
-    <section id="services" class="mt-20 scroll-mt-[20vh]">
-        <h2 class="text-3xl font-semibold mb-6 ">Services</h2>
+    <section class="scroll-mt-[20vh] mb-10 relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen bg-white p-10">
+        <div class="max-w-7xl m-auto">
+            <h2 class="text-3xl font-semibold">Installed Manufacturer Brands</h2>
+            <hr class="my-4 border-t border-gray-300 ">
+            <div class="flex flex-wrap flex-row justify-center">
+                <img src="./media/assa_abloy.JPG" alt="Manufacturer" class="max-h-35">
+                <img src="./media/schlage.JPG" alt="Manufacturer" class="max-h-35">
+                <img src="./media/allegion.JPG" alt="Manufacturer" class="max-h-35">
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="mt-20 scroll-mt-[20vh]">
-        <h2 class="text-3xl font-semibold mb-6 ">Contact</h2>
-        <form action="" method="POST"   class="space-y-6 bg-white border border-gray-400  p-6 rounded-lg shadow-md ">
+    <section id="contact" class="scroll-mt-[20vh]">
+        <h2 class="text-3xl font-semibold">Contact Us</h2>
+        <hr class="my-4 border-t border-gray-300">
+        <form action="https://formspree.io/f/xkgbvgkz" method="POST"   class="space-y-6 bg-white border border-gray-400  p-6 rounded-lg shadow-md ">
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 ">Name</label>
                 <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md   ">
@@ -113,7 +126,7 @@
 </main>
 
 <button id="backToTop"
-        class="hidden cursor-pointer fixed top-6 right-6 z-20 opacity-90 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
+        class="hidden cursor-pointer fixed top-8 right-6 z-20 opacity-90 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition"
         aria-label="Back to top">
     Back to Top ↑
 </button>
